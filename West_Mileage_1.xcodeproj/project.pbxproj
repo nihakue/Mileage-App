@@ -24,6 +24,9 @@
 		C0F0F7CD16A8F9E6003FCD73 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0F0F7CB16A8F9E6003FCD73 /* ViewController.xib */; };
 		C0F0F7D416A8FB68003FCD73 /* wordmark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0F0F7D316A8FB68003FCD73 /* wordmark.jpg */; };
 		C0F0F7D616A90086003FCD73 /* mileage.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F0F7D516A90086003FCD73 /* mileage.png */; };
+		C0F2E39B16BE402B00412CA9 /* MapViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F2E39916BE402A00412CA9 /* MapViewViewController.m */; };
+		C0F2E39C16BE402B00412CA9 /* MapViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0F2E39A16BE402A00412CA9 /* MapViewViewController.xib */; };
+		C0F2E39F16BE408200412CA9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2E39E16BE408200412CA9 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,10 @@
 		C0F0F7D316A8FB68003FCD73 /* wordmark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wordmark.jpg; sourceTree = "<group>"; };
 		C0F0F7D516A90086003FCD73 /* mileage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mileage.png; sourceTree = "<group>"; };
 		C0F0F7D916A90CD8003FCD73 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C0F2E39816BE402A00412CA9 /* MapViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewViewController.h; sourceTree = "<group>"; };
+		C0F2E39916BE402A00412CA9 /* MapViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewViewController.m; sourceTree = "<group>"; };
+		C0F2E39A16BE402A00412CA9 /* MapViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewViewController.xib; sourceTree = "<group>"; };
+		C0F2E39E16BE408200412CA9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F2E39F16BE408200412CA9 /* MapKit.framework in Frameworks */,
 				C0F0F7B116A8F9E6003FCD73 /* UIKit.framework in Frameworks */,
 				C0F0F7B316A8F9E6003FCD73 /* Foundation.framework in Frameworks */,
 				C0F0F7B516A8F9E6003FCD73 /* CoreGraphics.framework in Frameworks */,
@@ -70,6 +78,7 @@
 		C0F0F7A116A8F9E5003FCD73 = {
 			isa = PBXGroup;
 			children = (
+				C0F2E39E16BE408200412CA9 /* MapKit.framework */,
 				C0F0F7D516A90086003FCD73 /* mileage.png */,
 				C0F0F7B616A8F9E6003FCD73 /* West_Mileage_1 */,
 				C0F0F7AF16A8F9E6003FCD73 /* Frameworks */,
@@ -98,18 +107,19 @@
 		C0F0F7B616A8F9E6003FCD73 /* West_Mileage_1 */ = {
 			isa = PBXGroup;
 			children = (
-				C05CCD1C16AEF7310046AB48 /* usuBanner.png */,
-				C0F0F7D316A8FB68003FCD73 /* wordmark.jpg */,
 				C0F0F7BF16A8F9E6003FCD73 /* AppDelegate.h */,
 				C0F0F7C016A8F9E6003FCD73 /* AppDelegate.m */,
 				C0F0F7D916A90CD8003FCD73 /* ViewController.h */,
+				C0F0F7C916A8F9E6003FCD73 /* ViewController.m */,
+				C0F2E39816BE402A00412CA9 /* MapViewViewController.h */,
+				C0F2E39916BE402A00412CA9 /* MapViewViewController.m */,
+				C0F2E39A16BE402A00412CA9 /* MapViewViewController.xib */,
+				C0F0F7CB16A8F9E6003FCD73 /* ViewController.xib */,
 				C05672CF16BE0ED800F18D1F /* MileageManager.h */,
 				C05672D016BE0ED800F18D1F /* MileageManager.m */,
-				C05672C916BE0E6C00F18D1F /* SummaryView.xib */,
 				C05672CC16BE0EA200F18D1F /* SummaryView.h */,
 				C05672CD16BE0EA200F18D1F /* SummaryView.m */,
-				C0F0F7C916A8F9E6003FCD73 /* ViewController.m */,
-				C0F0F7CB16A8F9E6003FCD73 /* ViewController.xib */,
+				C05672C916BE0E6C00F18D1F /* SummaryView.xib */,
 				C0F0F7B716A8F9E6003FCD73 /* Supporting Files */,
 			);
 			path = West_Mileage_1;
@@ -118,6 +128,8 @@
 		C0F0F7B716A8F9E6003FCD73 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C05CCD1C16AEF7310046AB48 /* usuBanner.png */,
+				C0F0F7D316A8FB68003FCD73 /* wordmark.jpg */,
 				C0F0F7B816A8F9E6003FCD73 /* West_Mileage_1-Info.plist */,
 				C0F0F7B916A8F9E6003FCD73 /* InfoPlist.strings */,
 				C0F0F7BC16A8F9E6003FCD73 /* main.m */,
@@ -189,6 +201,7 @@
 				C0F0F7D616A90086003FCD73 /* mileage.png in Resources */,
 				C05CCD1D16AEF7310046AB48 /* usuBanner.png in Resources */,
 				C05672CA16BE0E6C00F18D1F /* SummaryView.xib in Resources */,
+				C0F2E39C16BE402B00412CA9 /* MapViewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +217,7 @@
 				C0F0F7CA16A8F9E6003FCD73 /* ViewController.m in Sources */,
 				C05672CE16BE0EA200F18D1F /* SummaryView.m in Sources */,
 				C05672D116BE0ED800F18D1F /* MileageManager.m in Sources */,
+				C0F2E39B16BE402B00412CA9 /* MapViewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

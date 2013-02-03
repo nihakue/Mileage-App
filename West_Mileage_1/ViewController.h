@@ -7,6 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MileageManager.h"
+#import "SummaryView.h"
+#import "MapViewViewController.h"
+
 //This is a test.
 @interface ViewController : UIViewController{
     
@@ -19,5 +23,7 @@
 
 - (IBAction)calculateMileage:(id)sender;
 - (void)showMileage:(float)mileage;
+
+@property(weak, nonatomic) MileageManager* myMileage;
 
 @end
