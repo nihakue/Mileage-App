@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+//This is a test.
 @interface ViewController : UIViewController{
     
+    __weak IBOutlet UILabel *dateL;
     __weak IBOutlet UITextField *odometerTF;
     __weak IBOutlet UITextField *fuelAddedTF;
     __weak IBOutlet UILabel *mileageResultL;

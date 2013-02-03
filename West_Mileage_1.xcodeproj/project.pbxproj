@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C05672CA16BE0E6C00F18D1F /* SummaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C05672C916BE0E6C00F18D1F /* SummaryView.xib */; };
+		C05672CE16BE0EA200F18D1F /* SummaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = C05672CD16BE0EA200F18D1F /* SummaryView.m */; };
+		C05672D116BE0ED800F18D1F /* MileageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C05672D016BE0ED800F18D1F /* MileageManager.m */; };
 		C05CCD1D16AEF7310046AB48 /* usuBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = C05CCD1C16AEF7310046AB48 /* usuBanner.png */; };
 		C0F0F7B116A8F9E6003FCD73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F0F7B016A8F9E6003FCD73 /* UIKit.framework */; };
 		C0F0F7B316A8F9E6003FCD73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F0F7B216A8F9E6003FCD73 /* Foundation.framework */; };
@@ -24,6 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C05672C916BE0E6C00F18D1F /* SummaryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SummaryView.xib; sourceTree = "<group>"; };
+		C05672CC16BE0EA200F18D1F /* SummaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryView.h; sourceTree = "<group>"; };
+		C05672CD16BE0EA200F18D1F /* SummaryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryView.m; sourceTree = "<group>"; };
+		C05672CF16BE0ED800F18D1F /* MileageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MileageManager.h; sourceTree = "<group>"; };
+		C05672D016BE0ED800F18D1F /* MileageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MileageManager.m; sourceTree = "<group>"; };
 		C05CCD1C16AEF7310046AB48 /* usuBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usuBanner.png; sourceTree = "<group>"; };
 		C0F0F7AC16A8F9E6003FCD73 /* West_Mileage_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = West_Mileage_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F0F7B016A8F9E6003FCD73 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -95,6 +103,11 @@
 				C0F0F7BF16A8F9E6003FCD73 /* AppDelegate.h */,
 				C0F0F7C016A8F9E6003FCD73 /* AppDelegate.m */,
 				C0F0F7D916A90CD8003FCD73 /* ViewController.h */,
+				C05672CF16BE0ED800F18D1F /* MileageManager.h */,
+				C05672D016BE0ED800F18D1F /* MileageManager.m */,
+				C05672C916BE0E6C00F18D1F /* SummaryView.xib */,
+				C05672CC16BE0EA200F18D1F /* SummaryView.h */,
+				C05672CD16BE0EA200F18D1F /* SummaryView.m */,
 				C0F0F7C916A8F9E6003FCD73 /* ViewController.m */,
 				C0F0F7CB16A8F9E6003FCD73 /* ViewController.xib */,
 				C0F0F7B716A8F9E6003FCD73 /* Supporting Files */,
@@ -175,6 +188,7 @@
 				C0F0F7D416A8FB68003FCD73 /* wordmark.jpg in Resources */,
 				C0F0F7D616A90086003FCD73 /* mileage.png in Resources */,
 				C05CCD1D16AEF7310046AB48 /* usuBanner.png in Resources */,
+				C05672CA16BE0E6C00F18D1F /* SummaryView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +202,8 @@
 				C0F0F7BD16A8F9E6003FCD73 /* main.m in Sources */,
 				C0F0F7C116A8F9E6003FCD73 /* AppDelegate.m in Sources */,
 				C0F0F7CA16A8F9E6003FCD73 /* ViewController.m in Sources */,
+				C05672CE16BE0EA200F18D1F /* SummaryView.m in Sources */,
+				C05672D116BE0ED800F18D1F /* MileageManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
