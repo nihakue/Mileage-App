@@ -38,10 +38,19 @@
     SummaryView * summaryView = [[SummaryView alloc]initWithNibName:@"SummaryView" bundle:nil];
     summaryView.myMileage = self.myMileage;
     [[self navigationController] pushViewController:summaryView animated:YES];
+    [self clearFields];
+    
+}
+
+- (void)clearFields{
+    odometerTF.text=@"";
+    fuelAddedTF.text=@"";
+    mileageResultL.text=@"";
 }
 
 - (IBAction)toMapView:(id)sender{
     MapViewViewController * mapVC = [[MapViewViewController alloc]initWithNibName:@"MapViewViewController" bundle:nil];
+    [self clearFields];
     [[self navigationController] pushViewController:mapVC animated:YES];
 }
 
@@ -52,7 +61,6 @@
     }
     if (textField == fuelAddedTF) {
         [textField resignFirstResponder];
-        [self calculateMileage:self];
     }
     return YES;
 }

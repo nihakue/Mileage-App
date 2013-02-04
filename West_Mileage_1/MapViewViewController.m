@@ -17,12 +17,12 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    [myMap setDelegate:self];
-    [myMap setShowsUserLocation:YES];
     if (self) {
     }
     return self;
 }
+
+
 
 - (void)mapView:(MKMapView * )mv didUpdateUserLocation:(MKUserLocation *)userLocation{
     NSLog(@"new location");
@@ -43,7 +43,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [myMap setDelegate:self];
+    [myMap setShowsUserLocation:YES];
 }
 
 - (void)didReceiveMemoryWarning
