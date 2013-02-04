@@ -1,6 +1,6 @@
 //
 //  MileageManager.h
-//  West_Mileage_1
+//  West_Mileage
 //
 //  Created by Gabriel West on 2/2/13.
 //  Copyright (c) 2013 Gabriel West. All rights reserved.

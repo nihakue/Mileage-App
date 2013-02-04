@@ -36,14 +36,14 @@
 		C05672CF16BE0ED800F18D1F /* MileageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MileageManager.h; sourceTree = "<group>"; };
 		C05672D016BE0ED800F18D1F /* MileageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MileageManager.m; sourceTree = "<group>"; };
 		C05CCD1C16AEF7310046AB48 /* usuBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usuBanner.png; sourceTree = "<group>"; };
-		C0F0F7AC16A8F9E6003FCD73 /* West_Mileage_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = West_Mileage_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F0F7AC16A8F9E6003FCD73 /* West_Mileage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = West_Mileage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F0F7B016A8F9E6003FCD73 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C0F0F7B216A8F9E6003FCD73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C0F0F7B416A8F9E6003FCD73 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C0F0F7B816A8F9E6003FCD73 /* West_Mileage_1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "West_Mileage_1-Info.plist"; sourceTree = "<group>"; };
+		C0F0F7B816A8F9E6003FCD73 /* West_Mileage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "West_Mileage-Info.plist"; sourceTree = "<group>"; };
 		C0F0F7BA16A8F9E6003FCD73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C0F0F7BC16A8F9E6003FCD73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C0F0F7BE16A8F9E6003FCD73 /* West_Mileage_1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "West_Mileage_1-Prefix.pch"; sourceTree = "<group>"; };
+		C0F0F7BE16A8F9E6003FCD73 /* West_Mileage-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "West_Mileage-Prefix.pch"; sourceTree = "<group>"; };
 		C0F0F7BF16A8F9E6003FCD73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C0F0F7C016A8F9E6003FCD73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C0F0F7C216A8F9E6003FCD73 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 			children = (
 				C0F2E39E16BE408200412CA9 /* MapKit.framework */,
 				C0F0F7D516A90086003FCD73 /* mileage.png */,
-				C0F0F7B616A8F9E6003FCD73 /* West_Mileage_1 */,
+				C0F0F7B616A8F9E6003FCD73 /* West_Mileage */,
 				C0F0F7AF16A8F9E6003FCD73 /* Frameworks */,
 				C0F0F7AD16A8F9E6003FCD73 /* Products */,
 			);
@@ -89,7 +89,7 @@
 		C0F0F7AD16A8F9E6003FCD73 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C0F0F7AC16A8F9E6003FCD73 /* West_Mileage_1.app */,
+				C0F0F7AC16A8F9E6003FCD73 /* West_Mileage.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,7 +104,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C0F0F7B616A8F9E6003FCD73 /* West_Mileage_1 */ = {
+		C0F0F7B616A8F9E6003FCD73 /* West_Mileage */ = {
 			isa = PBXGroup;
 			children = (
 				C0F0F7BF16A8F9E6003FCD73 /* AppDelegate.h */,
@@ -122,6 +122,7 @@
 				C05672C916BE0E6C00F18D1F /* SummaryView.xib */,
 				C0F0F7B716A8F9E6003FCD73 /* Supporting Files */,
 			);
+			name = West_Mileage;
 			path = West_Mileage_1;
 			sourceTree = "<group>";
 		};
@@ -130,10 +131,10 @@
 			children = (
 				C05CCD1C16AEF7310046AB48 /* usuBanner.png */,
 				C0F0F7D316A8FB68003FCD73 /* wordmark.jpg */,
-				C0F0F7B816A8F9E6003FCD73 /* West_Mileage_1-Info.plist */,
+				C0F0F7B816A8F9E6003FCD73 /* West_Mileage-Info.plist */,
 				C0F0F7B916A8F9E6003FCD73 /* InfoPlist.strings */,
 				C0F0F7BC16A8F9E6003FCD73 /* main.m */,
-				C0F0F7BE16A8F9E6003FCD73 /* West_Mileage_1-Prefix.pch */,
+				C0F0F7BE16A8F9E6003FCD73 /* West_Mileage-Prefix.pch */,
 				C0F0F7C216A8F9E6003FCD73 /* Default.png */,
 				C0F0F7C416A8F9E6003FCD73 /* Default@2x.png */,
 				C0F0F7C616A8F9E6003FCD73 /* Default-568h@2x.png */,
@@ -144,9 +145,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C0F0F7AB16A8F9E5003FCD73 /* West_Mileage_1 */ = {
+		C0F0F7AB16A8F9E5003FCD73 /* West_Mileage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C0F0F7D016A8F9E6003FCD73 /* Build configuration list for PBXNativeTarget "West_Mileage_1" */;
+			buildConfigurationList = C0F0F7D016A8F9E6003FCD73 /* Build configuration list for PBXNativeTarget "West_Mileage" */;
 			buildPhases = (
 				C0F0F7A816A8F9E5003FCD73 /* Sources */,
 				C0F0F7A916A8F9E5003FCD73 /* Frameworks */,
@@ -156,9 +157,9 @@
 			);
 			dependencies = (
 			);
-			name = West_Mileage_1;
+			name = West_Mileage;
 			productName = West_Mileage_1;
-			productReference = C0F0F7AC16A8F9E6003FCD73 /* West_Mileage_1.app */;
+			productReference = C0F0F7AC16A8F9E6003FCD73 /* West_Mileage.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -170,7 +171,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Gabriel West";
 			};
-			buildConfigurationList = C0F0F7A616A8F9E5003FCD73 /* Build configuration list for PBXProject "West_Mileage_1" */;
+			buildConfigurationList = C0F0F7A616A8F9E5003FCD73 /* Build configuration list for PBXProject "West_Mileage" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -182,7 +183,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C0F0F7AB16A8F9E5003FCD73 /* West_Mileage_1 */,
+				C0F0F7AB16A8F9E5003FCD73 /* West_Mileage */,
 			);
 		};
 /* End PBXProject section */
@@ -296,9 +297,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "West_Mileage_1/West_Mileage_1-Prefix.pch";
-				INFOPLIST_FILE = "West_Mileage_1/West_Mileage_1-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "West_Mileage_1/West_Mileage-Prefix.pch";
+				INFOPLIST_FILE = "West_Mileage_1/West_Mileage-Info.plist";
+				PRODUCT_NAME = West_Mileage;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -307,9 +308,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "West_Mileage_1/West_Mileage_1-Prefix.pch";
-				INFOPLIST_FILE = "West_Mileage_1/West_Mileage_1-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "West_Mileage_1/West_Mileage-Prefix.pch";
+				INFOPLIST_FILE = "West_Mileage_1/West_Mileage-Info.plist";
+				PRODUCT_NAME = West_Mileage;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -317,7 +318,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C0F0F7A616A8F9E5003FCD73 /* Build configuration list for PBXProject "West_Mileage_1" */ = {
+		C0F0F7A616A8F9E5003FCD73 /* Build configuration list for PBXProject "West_Mileage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C0F0F7CE16A8F9E6003FCD73 /* Debug */,
@@ -326,7 +327,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C0F0F7D016A8F9E6003FCD73 /* Build configuration list for PBXNativeTarget "West_Mileage_1" */ = {
+		C0F0F7D016A8F9E6003FCD73 /* Build configuration list for PBXNativeTarget "West_Mileage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C0F0F7D116A8F9E6003FCD73 /* Debug */,

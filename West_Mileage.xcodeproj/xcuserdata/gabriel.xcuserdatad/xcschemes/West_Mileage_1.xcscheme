@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C0F0F7AB16A8F9E5003FCD73"
                BuildableName = "West_Mileage_1.app"
-               BlueprintName = "West_Mileage_1"
-               ReferencedContainer = "container:West_Mileage_1.xcodeproj">
+               BlueprintName = "West_Mileage"
+               ReferencedContainer = "container:West_Mileage.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C0F0F7AB16A8F9E5003FCD73"
             BuildableName = "West_Mileage_1.app"
-            BlueprintName = "West_Mileage_1"
-            ReferencedContainer = "container:West_Mileage_1.xcodeproj">
+            BlueprintName = "West_Mileage"
+            ReferencedContainer = "container:West_Mileage.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,8 +53,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C0F0F7AB16A8F9E5003FCD73"
             BuildableName = "West_Mileage_1.app"
-            BlueprintName = "West_Mileage_1"
-            ReferencedContainer = "container:West_Mileage_1.xcodeproj">
+            BlueprintName = "West_Mileage"
+            ReferencedContainer = "container:West_Mileage.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,8 +71,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C0F0F7AB16A8F9E5003FCD73"
             BuildableName = "West_Mileage_1.app"
-            BlueprintName = "West_Mileage_1"
-            ReferencedContainer = "container:West_Mileage_1.xcodeproj">
+            BlueprintName = "West_Mileage"
+            ReferencedContainer = "container:West_Mileage.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
