@@ -28,6 +28,13 @@
     [[self navigationItem] setRightBarButtonItems:bbiArray];
     
     //Get the date and set the date label.
+    saveB.enabled = NO;
+}
+
+- (void) viewWillAppear:(BOOL)animated{
+    if (mileageResultL.text ==@"") {
+        saveB.enabled = NO;
+    }
     NSDateFormatter * dateFormatter = [[NSDateFormatter alloc] init];
     NSDate * date = [NSDate date];
     [dateFormatter setDateFormat:@"MM/dd, HH:mm:ss zzz"];
@@ -70,21 +77,34 @@
 }
 
 -(IBAction)calculateMileage:(id)sender{
+    [fuelAddedTF resignFirstResponder];
+    [odometerTF resignFirstResponder];
     //Calculate MPG
     float odomValue = [odometerTF.text intValue];
     float fuelValue = [fuelAddedTF.text intValue];
-    NSNumber * mpg = [[NSNumber alloc]initWithFloat:odomValue/fuelValue];
+    NSDate * now = [NSDate date];
+
+    if (odomValue && fuelValue) {
+        thisEntry = [[MileageEntry alloc] initWithMileage:odomValue fuelAdded:fuelValue economy:odomValue/fuelValue dateAdded:[NSDate date]];
+        saveB.enabled=YES;
+    }
+    
+    [self showMileage:thisEntry.fuelEconomy];
+
+}
+-(IBAction)saveMileage:(id)sender{
+    
+    [self.myMileage pushEntry:thisEntry];
     
     //Stores the data in the mileage manager
     self.myMileage.numRecords ++;
-    NSLog(@"num records = %d", self.myMileage.numRecords);
-    self.myMileage.totalFuel += fuelValue;
-    self.myMileage.totalMiles += odomValue;
-    [self.myMileage addMPG:mpg];
     
-    [self showMileage:(odomValue/fuelValue)];
-
+    self.myMileage.totalFuel += thisEntry.fuelAdded;
+    self.myMileage.totalMiles += thisEntry.milesDriven;
+    saveB.enabled = NO;
+    [self clearFields];
 }
+
 
 -(void)showMileage:(float)mileage{
     mileageResultL.text=[[NSString alloc] initWithFormat:@"%.2f MPG", mileage];

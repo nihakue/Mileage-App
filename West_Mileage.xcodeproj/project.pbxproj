@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C01F9F6516CC23E000A6AD24 /* HistoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C01F9F6316CC23E000A6AD24 /* HistoryVC.m */; };
+		C01F9F6616CC23E000A6AD24 /* HistoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C01F9F6416CC23E000A6AD24 /* HistoryVC.xib */; };
 		C05672CA16BE0E6C00F18D1F /* SummaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C05672C916BE0E6C00F18D1F /* SummaryView.xib */; };
 		C05672CE16BE0EA200F18D1F /* SummaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = C05672CD16BE0EA200F18D1F /* SummaryView.m */; };
 		C05672D116BE0ED800F18D1F /* MileageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C05672D016BE0ED800F18D1F /* MileageManager.m */; };
@@ -30,6 +32,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C01F9F6216CC23E000A6AD24 /* HistoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryVC.h; sourceTree = "<group>"; };
+		C01F9F6316CC23E000A6AD24 /* HistoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryVC.m; sourceTree = "<group>"; };
+		C01F9F6416CC23E000A6AD24 /* HistoryVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryVC.xib; sourceTree = "<group>"; };
 		C05672C916BE0E6C00F18D1F /* SummaryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SummaryView.xib; sourceTree = "<group>"; };
 		C05672CC16BE0EA200F18D1F /* SummaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryView.h; sourceTree = "<group>"; };
 		C05672CD16BE0EA200F18D1F /* SummaryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryView.m; sourceTree = "<group>"; };
@@ -111,15 +116,18 @@
 				C0F0F7C016A8F9E6003FCD73 /* AppDelegate.m */,
 				C0F0F7D916A90CD8003FCD73 /* ViewController.h */,
 				C0F0F7C916A8F9E6003FCD73 /* ViewController.m */,
+				C0F0F7CB16A8F9E6003FCD73 /* ViewController.xib */,
 				C0F2E39816BE402A00412CA9 /* MapViewViewController.h */,
 				C0F2E39916BE402A00412CA9 /* MapViewViewController.m */,
 				C0F2E39A16BE402A00412CA9 /* MapViewViewController.xib */,
-				C0F0F7CB16A8F9E6003FCD73 /* ViewController.xib */,
 				C05672CF16BE0ED800F18D1F /* MileageManager.h */,
 				C05672D016BE0ED800F18D1F /* MileageManager.m */,
 				C05672CC16BE0EA200F18D1F /* SummaryView.h */,
 				C05672CD16BE0EA200F18D1F /* SummaryView.m */,
 				C05672C916BE0E6C00F18D1F /* SummaryView.xib */,
+				C01F9F6216CC23E000A6AD24 /* HistoryVC.h */,
+				C01F9F6316CC23E000A6AD24 /* HistoryVC.m */,
+				C01F9F6416CC23E000A6AD24 /* HistoryVC.xib */,
 				C0F0F7B716A8F9E6003FCD73 /* Supporting Files */,
 			);
 			name = West_Mileage;
@@ -203,6 +211,7 @@
 				C05CCD1D16AEF7310046AB48 /* usuBanner.png in Resources */,
 				C05672CA16BE0E6C00F18D1F /* SummaryView.xib in Resources */,
 				C0F2E39C16BE402B00412CA9 /* MapViewViewController.xib in Resources */,
+				C01F9F6616CC23E000A6AD24 /* HistoryVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +228,7 @@
 				C05672CE16BE0EA200F18D1F /* SummaryView.m in Sources */,
 				C05672D116BE0ED800F18D1F /* MileageManager.m in Sources */,
 				C0F2E39B16BE402B00412CA9 /* MapViewViewController.m in Sources */,
+				C01F9F6516CC23E000A6AD24 /* HistoryVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

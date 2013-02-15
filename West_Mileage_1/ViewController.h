@@ -11,6 +11,7 @@
 #import "SummaryView.h"
 #import "MapViewViewController.h"
 
+
 //This is a test.
 @interface ViewController : UIViewController{
     
@@ -18,10 +19,13 @@
     __weak IBOutlet UITextField *odometerTF;
     __weak IBOutlet UITextField *fuelAddedTF;
     __weak IBOutlet UILabel *mileageResultL;
+    __weak IBOutlet UIButton *saveB;
+    MileageEntry * thisEntry;
     
 }
 
 - (IBAction)calculateMileage:(id)sender;
+- (IBAction)saveMileage:(MileageEntry *)entry;
 - (void)showMileage:(float)mileage;
 
 @property(weak, nonatomic) MileageManager* myMileage;

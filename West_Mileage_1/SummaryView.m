@@ -26,6 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UIBarButtonItem * historyBBI = [[UIBarButtonItem alloc] initWithTitle:@"History" style:UIBarButtonItemStylePlain target:self action:@selector(toHistoryView:)];
+    [[self navigationItem] setRightBarButtonItem:historyBBI];
     
 }
 
@@ -34,10 +36,17 @@
     NSLog(@"View Appeared");
 }
 
+-(IBAction)toHistoryView:(id)sender{
+    HistoryVC * historyView = [[HistoryVC alloc] init];
+    historyView.myMileage = self.myMileage;
+    [[self navigationController] pushViewController:historyView animated:YES];
+}
+
+
 - (void)setLabels{
-    numRecordsL.text = [[NSString alloc] initWithFormat:@"%d", self.myMileage.numRecords];
-    totalFuelL.text = [[NSString alloc] initWithFormat:@"%.1f", self.myMileage.totalFuel];
-    totalMilesL.text = [[NSString alloc] initWithFormat:@"%.1f", self.myMileage.totalMiles];
+    numRecordsL.text = [NSString stringWithFormat:@"%d", [self.myMileage.mileageArray count]];
+    totalFuelL.text = [[NSString alloc] initWithFormat:@"%.1f", [self.myMileage getTotalFuel]];
+    totalMilesL.text = [[NSString alloc] initWithFormat:@"%.1f", [self.myMileage getTotalMiles]];
     avgMPGL.text = [[NSString alloc] initWithFormat:@"%.1f", [self.myMileage calculateAverageMPG]];
     
 }

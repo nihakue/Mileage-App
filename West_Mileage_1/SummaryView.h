@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MileageManager.h"
+#import "HistoryVC.h"
 
 @interface SummaryView : UIViewController{
     

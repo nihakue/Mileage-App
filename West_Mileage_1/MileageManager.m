@@ -17,28 +17,56 @@
     self.totalFuel = 0;
     self.totalMiles = 0;
     self.avgEconomy = 0;
-    mileages = [[NSMutableArray alloc]initWithCapacity:25];
-    date = [NSDate date];
+    self.mileageArray = [[NSMutableArray alloc] init];
     return self;
 }
 
--(void)addMPG:(NSNumber *)mpg{
-    [mileages addObject:mpg];
-}
 -(float)calculateAverageMPG{
     float bigAverage = 0;
-    for (NSNumber * mpg in mileages) {
-        bigAverage += [mpg floatValue];
+    for (MileageEntry * entry in self.mileageArray) {
+        bigAverage += entry.fuelEconomy;
     }
-    return bigAverage /= numRecords;
+    return bigAverage /= [self.mileageArray count];
+}
+
+-(float) getTotalMiles{
+    float total = 0;
+    for (MileageEntry * entry in self.mileageArray) {
+        total += entry.milesDriven;
+    }
+    return total;
+}
+
+-(float) getTotalFuel{
+    float total = 0;
+    for (MileageEntry * entry in self.mileageArray) {
+        total += entry.fuelAdded;
+    }
+    return total;
 }
 
 -(void)resetData{
-    self.numRecords = 0;
-    self.totalFuel = 0;
-    self.totalMiles = 0;
-    self.avgEconomy = 0;
-    [mileages removeAllObjects];
+    [self.mileageArray removeAllObjects];
 }
 
+-(void)pushEntry:(MileageEntry *)entry{
+    [self.mileageArray addObject:entry];
+}
+
+@end
+
+@implementation MileageEntry
+@synthesize milesDriven, fuelAdded, fuelEconomy, date;
+
+-(id)initWithMileage:(float)miles fuelAdded:(float)fuel economy:(float)econ dateAdded:(NSDate*)now{
+    self = [super init];
+    if (self){
+        self.milesDriven = miles;
+        self.fuelAdded = fuel;
+        self.fuelEconomy = econ;
+        self.date = now;
+        return self;
+    }
+    return nil;
+}
 @end
